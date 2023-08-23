@@ -1,0 +1,11 @@
+[package]
+name = "libsql-native"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libsql = { git = "https://github.com/libsql/libsql/", rev = "8045a458e72f8622c57730f3a7ba87ce8e40b255" }
+jni = "0.21.0"
